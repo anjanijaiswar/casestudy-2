@@ -1,0 +1,131 @@
+<!-- booking section starts   -->
+
+<section class="book" id="book">
+  <h1 class="heading"><span>book</span> now</h1>
+
+  <div class="row">
+    <div class="image">
+      <img src="assets/buk.png" alt="" />
+    </div>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)=" saveChanges()" >
+      <h3>book appointment</h3>
+      <input
+        type="text"
+        placeholder="your name"
+        class="form-control"
+        formControlName="Name"
+      />
+      <div class="form-text text-danger" *ngIf="(Name.errors?.['required'] && (Name.touched || Name.dirty))">
+        please fill name
+      </div>
+      <div class="form-text text-danger" *ngIf="Name.errors?.['minlength'] && (Name.touched || Name.dirty)">
+        please fill proper name
+      </div>
+
+      <input
+        type="tel"
+        placeholder="your mobile number"
+        formControlName="Number"
+        class="form-control"
+      />
+      <div class="form-text text-danger" *ngIf="Number.errors?.['required'] && (Number.touched || Number.dirty)">
+        please fill number
+      </div>
+      <div class="form-text text-danger" *ngIf="Number.errors?.['minlength'] && (Number.touched || Number.dirty)">
+        please fill proper number
+      </div>
+      <div class="form-text text-danger" *ngIf="Number.errors?.['maxlength'] && (Number.touched || Number.dirty)">
+        please fill proper number
+      </div>
+      
+
+      <input
+        type="email"
+        placeholder="your email"
+        formControlName="Email"
+        class="form-control"
+      />
+      <div class="form-text text-danger" *ngIf="Email.errors?.['required'] && (Email.touched || Email.dirty)">
+        please fill email
+      </div>
+      <div class="form-text text-danger" *ngIf="Email.errors?.['email'] && (Email.touched || Email.dirty)">
+        please fill proper email
+      </div>
+
+
+      <input
+        type="text"
+        placeholder="Prefered doctor"
+        class="form-control"
+        formControlName="Doctorname"
+      />
+      <div class="form-text text-danger" *ngIf="Doctorname.errors?.['required'] && (Doctorname.touched || Doctorname.dirty)">
+        please fill doctor name
+      </div>
+      <div class="form-text text-danger" *ngIf="Doctorname.errors?.['minlength'] && (Doctorname.touched || Doctorname.dirty)">
+        please fill proper doctor name
+      </div>
+      <input
+        type="date"
+        placeholder="Appointement date"
+        formControlName="Date"
+        class="form-control"
+      />
+      <div class="form-text text-danger" *ngIf="Date.errors?.['required'] && (Date.touched || Date.dirty)">
+        please fill date
+      </div>
+
+      <input type="time" formControlName="Time" class="box" />
+      <div class="form-text text-danger" *ngIf="Time.errors?.['required'] && (Time.touched || Time.dirty)">
+        please fill time
+      </div>
+      <input
+        type="submit"
+        value="book now" 
+        class="btn"
+        [disabled]="checkoutForm.invalid"
+      />
+      
+
+    </form>
+  </div>
+  <!-- pop up message -->
+ <!--<div>
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"></h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <h3 style="text-align: center">Appointment booked succesfully!</h3>
+        </div>
+        <div style="width: 100; margin-left: 170px">
+          <a routerLink="/appointment"><button class="btn btn-primary" type="submit" >
+            View Details
+          </button></a>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>-->
+
+</section>
+
+<!-- booking section ends -->

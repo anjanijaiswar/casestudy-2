@@ -1,0 +1,85 @@
+<!-- doctors section starts  -->
+
+<section class="doctors" id="doctors">
+
+    <h1 class="heading"> our <span>doctors</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" *ngFor="let doctor of doctors">
+            <img [src]="doctor.Image" alt="">
+            <h3>{{doctor.Name}}</h3>
+            <span>{{doctor.Speciality}}</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <!-- <div class="box">
+            <img src="assets/doc-2.jpg" alt="">
+            <h3>Bryan Saftler</h3>
+            <span>Internal Diseases</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div> -->
+
+        <!-- <div class="box">
+            <img src="assets/doc-3.jpg" alt="">
+            <h3>Matthew Bayliss</h3>
+            <span>Orthopedics Expert</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div> -->
+
+        <!-- <div class="box">
+            <img src="assets/doc-4.jpg" alt="">
+            <h3>Dr. Stein Albert</h3>
+            <span>Cardiology</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div> -->
+
+        <!-- <div class="box">
+            <img src="assets/doc-5.jpg" alt="">
+            <h3>Dr. Alex Melvin</h3>
+            <span>Dental</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div> -->
+
+        <!-- <div class="box">
+            <img src="assets/doc-6.jpg" alt="">
+            <h3>Dr. Albert Steffany</h3>
+            <span>General Health</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div> -->
+
+    </div>
+
+</section>
+
+<!-- doctors section ends -->

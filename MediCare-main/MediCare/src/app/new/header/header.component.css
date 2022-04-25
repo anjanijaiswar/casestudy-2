@@ -1,0 +1,41 @@
+.navbar-light .navbar-nav .nav-link{
+    color: var(--secondary-color);
+}
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.logo i{
+    font-size: 3rem;
+    color: blue;
+    padding-right: 5px;
+}
+
+
+nav{
+    
+    background-color: aliceblue;
+}
+.head{
+    height: 80px;
+}
+.header-container{
+    margin-left: 60px;
+    font-size: 3rem;
+}
+.cols-3{
+    width: 10%;
+    float: left;
+}
+.cols-4{
+    width: 90%;
+    float: left;
+    font-size: 2rem;
+}
+.menu li{
+    list-style-type: none;
+    display: inline;
+    color:#8e8e8e;
+    padding-right: 28px;
+}

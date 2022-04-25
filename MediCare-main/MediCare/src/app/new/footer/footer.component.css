@@ -1,0 +1,36 @@
+.footer{
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+    background-color: rgb(6, 6, 87);
+    color: aliceblue;
+    padding: 20px 10px;
+
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 24px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0px 6px;
+    font-size: 18px;
+}
+a:hover{
+    color: var(--primary-color);
+}
+
+i{
+    padding: 0px 8px;
+}
+p{
+    font-size: 14px;
+}
+.copyright{
+    font-size: 15px;
+    margin-left: 35%;
+    font-weight: 100;
+}

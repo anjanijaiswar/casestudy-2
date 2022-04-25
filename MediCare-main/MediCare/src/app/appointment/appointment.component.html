@@ -1,0 +1,33 @@
+
+<table class="table" style="font-size: 15px;">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Appointment Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">Actions</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of appointement">
+        <th scope="row" >{{appointment.Id}}</th>
+        <td>{{appointment.Name}}</td>
+        <td>{{appointment.Number}}</td>
+        <td>{{appointment.Email}}</td>
+        <td>{{appointment.Doctorname}}</td>
+        <td>{{appointment.Date}}</td>
+        <td>{{appointment.Time}}</td>
+        <td><i class="bi bi-pencil-fill"></i>&nbsp;
+            <i class="bi bi-trash-fill"></i></td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  
