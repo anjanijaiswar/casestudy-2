@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lifeline", "lifeline\lifeline.csproj", "{7C9C1FB0-9D8B-4FF4-9B58-07585418B348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeTest", "LifeTest\LifeTest.csproj", "{655B823B-20C5-41AE-8540-45A4EF6BB2A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C9C1FB0-9D8B-4FF4-9B58-07585418B348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9C1FB0-9D8B-4FF4-9B58-07585418B348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9C1FB0-9D8B-4FF4-9B58-07585418B348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9C1FB0-9D8B-4FF4-9B58-07585418B348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655B823B-20C5-41AE-8540-45A4EF6BB2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655B823B-20C5-41AE-8540-45A4EF6BB2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655B823B-20C5-41AE-8540-45A4EF6BB2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655B823B-20C5-41AE-8540-45A4EF6BB2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0457AB4-5A34-4092-BF4D-E11097150D45}
+	EndGlobalSection
+EndGlobal
